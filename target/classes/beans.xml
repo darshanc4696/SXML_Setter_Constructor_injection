@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="jt" class="com.spring.Impl.JavaTrainer">
+    
+    <!-- for Setter Injection -->
+	    <property name="name" value="Kshithij"></property>
+	    <property name="message" value="practice Core JAVA"></property>
+
+	<!-- for Constructor Injection -->
+	    <!--  <constructor-arg name="name" value="Kshithij"></constructor-arg>
+	    <constructor-arg name="message" value="Kshithij"></constructor-arg>-->
+    
+    </bean>
+    
+    <bean id="st" class="com.spring.Impl.SqlTrainer">
+    
+	    <property name="name" value="Somanna"></property>
+	    <property name="message" value="practice SQL Queries"></property>
+    
+    </bean>
+    
+</beans>
